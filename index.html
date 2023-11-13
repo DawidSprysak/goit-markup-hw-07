@@ -30,6 +30,16 @@
   <body>
     <header class="header">
       <div class="container header-layout">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger" />
+          </svg>
+        </button>
+
         <nav class="navigation">
           <a class="logo link" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
@@ -131,6 +141,10 @@
             <li class="product">
               <img
                 src="./images/What-Are-We-Doing/apple-imac.jpg"
+                srcset="
+                  ./images/What-Are-We-Doing/apple-imac.jpg    1x,
+                  ./images/What-Are-We-Doing/apple-imac@2x.jpg 2x
+                "
                 alt="apple imac"
                 width="360"
               />
@@ -138,6 +152,10 @@
             <li class="product">
               <img
                 src="./images/What-Are-We-Doing/cascading-smartphone-screen.jpg"
+                srcset="
+                  ./images/What-Are-We-Doing/cascading-smartphone-screen.jpg    1x,
+                  ./images/What-Are-We-Doing/cascading-smartphone-screen@2x.jpg 2x
+                "
                 alt="cascading smartphone screen"
                 width="360"
               />
@@ -145,6 +163,10 @@
             <li class="product">
               <img
                 src="./images/What-Are-We-Doing/laptop-and-smartphone.jpg"
+                srcset="
+                  ./images/What-Are-We-Doing/laptop-and-smartphone.jpg    1x,
+                  ./images/What-Are-We-Doing/laptop-and-smartphone@2x.jpg 2x
+                "
                 alt="laptop and smartphone"
                 width="360"
               />
@@ -160,6 +182,10 @@
             <li class="team-member">
               <img
                 src="./images/Our-Team/marc-guerrero's-photo.jpg"
+                srcset="
+                  ./images/Our-Team/marc-guerrero's-photo.jpg    1x,
+                  ./images/Our-Team/marc-guerrero's-photo@2x.jpg 2x
+                "
                 alt="man in a blue shirt with short stubble and a half smile"
                 width="264"
               />
@@ -201,6 +227,10 @@
             <li class="team-member">
               <img
                 src="./images/Our-Team/tom-ford's-photo.jpg"
+                srcset="
+                  ./images/Our-Team/tom-ford's-photo.jpg    1x,
+                  ./images/Our-Team/tom-ford's-photo@2x.jpg 2x
+                "
                 alt="smiling short haired man in a blue shirt"
                 width="264"
               />
@@ -242,6 +272,10 @@
             <li class="team-member">
               <img
                 src="./images/Our-Team/camila-garcia's-photo.jpg"
+                srcset="
+                  ./images/Our-Team/camila-garcia's-photo.jpg    1x,
+                  ./images/Our-Team/camila-garcia's-photo@2x.jpg 2x
+                "
                 alt="long haired woman in a pink sweater"
                 width="264"
               />
@@ -283,6 +317,10 @@
             <li class="team-member">
               <img
                 src="./images/Our-Team/daniel-wilson's-photo.jpg"
+                srcset="
+                  ./images/Our-Team/daniel-wilson's-photo.jpg    1x,
+                  ./images/Our-Team/daniel-wilson's-photo@2x.jpg 2x
+                "
                 alt="man in grey t shirt with short tangled hair"
                 width="264"
               />
@@ -394,28 +432,28 @@
             <li class="footer-socials-item">
               <a class="socials-link footer-socials-link" href="">
                 <svg width="24" height="24" class="footer-socials-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-instagram" />
                 </svg>
               </a>
             </li>
             <li class="footer-socials-item">
               <a class="socials-link footer-socials-link" href="">
                 <svg width="24" height="24" class="footer-socials-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-twitter" />
                 </svg>
               </a>
             </li>
             <li class="footer-socials-item">
               <a class="socials-link footer-socials-link" href="">
                 <svg width="24" height="24" class="footer-socials-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#icon-facebook" />
                 </svg>
               </a>
             </li>
             <li class="footer-socials-item">
               <a class="socials-link footer-socials-link" href="">
                 <svg width="24" height="24" class="footer-socials-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#icon-linkedin" />
                 </svg>
               </a>
             </li>
@@ -537,6 +575,73 @@
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div>
+        <button class="close-btn menu-toggle js-close-menu" type="button">
+          <svg class="c-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+
+        <nav class="navigation">
+          <ul class="list page-navigation">
+            <li><a class="link is-active" href="./index.html">Studio</a></li>
+            <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <address class="address">
+          <ul class="list menu-address-list">
+            <li class="menu-address-li">
+              <a class="link contact-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-address-li">
+              <a class="link contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="menu-social-list">
+          <li class="footer-socials-item">
+            <a class="socials-link footer-socials-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a class="socials-link footer-socials-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a class="socials-link footer-socials-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a class="socials-link footer-socials-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
